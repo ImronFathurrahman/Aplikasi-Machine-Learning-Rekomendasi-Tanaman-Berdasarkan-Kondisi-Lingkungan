@@ -136,11 +136,13 @@ if st.session_state.data_loaded:
             st.info('Butuh lahan tergenang/irigasi terkontrol; cocok untuk musim hujan.')
         elif pred == 'jagung':
             st.info('Tahan kemarau; cocok untuk tanah dengan drainase baik.')
+        elif pred == 'kedelai':
+            st.info('Membutuhkan tanah yang kaya bahan organik dan drainase baik; peka terhadap genangan air yang berlebih.')
+        elif pred == 'kacang_hijau':
+            st.info('Sangat toleran terhadap kekeringan; cocok ditanam pada lahan sawah di musim kemarau setelah panen padi.')
 
 else:
     st.info('Tekan tombol "Load Dataset & Latih Model" di sidebar untuk memulai. Aplikasi otomatis membaca `rekomendasi_tanaman.csv` dari folder proyek.')
 
 st.markdown('---')
-
 st.caption('Catatan: Model sederhana untuk demonstrasi; gunakan dataset besar dan validasi tambahan untuk produksi.')
-
