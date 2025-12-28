@@ -8,7 +8,7 @@ import time
 import plotly.express as px
 
 # --- Header & config ---
-st.set_page_config(page_title="🌱 Rekomendasi Tanaman", page_icon="🌱", layout="wide")
+st.set_page_config(page_title="Rekomendasi Tanaman", page_icon="🌱", layout="wide")
 st.markdown("""
 <div style='background: linear-gradient(90deg,#2a9d8f,#26a98c); padding: 18px; border-radius: 10px;'>
   <h1 style='color: white; margin: 0;'>🌱 Aplikasi Rekomendasi Tanaman</h1>
@@ -143,3 +143,4 @@ else:
 st.markdown('---')
 
 st.caption('Catatan: Model sederhana untuk demonstrasi; gunakan dataset besar dan validasi tambahan untuk produksi.')
+
